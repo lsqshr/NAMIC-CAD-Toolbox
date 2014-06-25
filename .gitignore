@@ -3,3 +3,6 @@
 *jpeg
 *swp
 *class
+.idea/*
+*iml
+.metadata/*

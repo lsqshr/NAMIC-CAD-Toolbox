@@ -5,12 +5,17 @@
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. --><project basedir="." default="build" name="NAMIC-CAD-Toolbox">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../usr/lib/eclipse"/>
+    <property name="JRE_LIB" value="../../../../../Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home/jre/lib/rt.jar"/>
+    <property name="ECLIPSE_HOME" value="../../../../../Applications/eclipse"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
+    <path id="Users/apple/GitHub/SlicerProject/NAMIC-CAD-Toolbox/bin.libraryclasspath"/>
     <path id="NAMIC-CAD-Toolbox.classpath">
         <pathelement location="bin"/>
+        <pathelement location="${JRE_LIB}"/>
+        <path refid="Users/apple/GitHub/SlicerProject/NAMIC-CAD-Toolbox/bin.libraryclasspath"/>
+        <pathelement location="lib/encog-core-3.1.0-SNAPSHOT.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -46,10 +51,5 @@
     <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
-    </target>
-    <target name="FSManager">
-        <java classname="namic.cad.preprocessor.fs.FSManager" failonerror="true" fork="yes">
-            <classpath refid="NAMIC-CAD-Toolbox.classpath"/>
-        </java>
     </target>
 </project>
