@@ -1,9 +1,9 @@
-package preprocessor.fs;
+package namic.cad.preprocessor.fs;
 
-import models.Patient;
-import preprocessor.interfaces.PWorker;
-import preprocessor.interfaces.PreprocessingMangager;
-import utils.ShellInteractor;
+import namic.cad.models.Patient;
+import namic.cad.preprocessor.interfaces.PWorker;
+import namic.cad.preprocessor.interfaces.PreprocessingMangager;
+import namic.cad.utils.ShellInteractor;
 
 public class FSWorker implements PWorker{
     private int curPid = -1;

@@ -1,13 +1,14 @@
-package preprocessor.fs;
+package namic.cad.preprocessor.fs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-import preprocessor.interfaces.PWorker;
-import preprocessor.interfaces.PreprocessingMangager;
-import utils.ShellInteractor;
+import namic.cad.preprocessor.interfaces.PWorker;
+import namic.cad.preprocessor.interfaces.PreprocessingMangager;
+import namic.cad.utils.ShellInteractor;
+
 
 // The Free Surfer Manager to manager the preprocessing workers locally on the same server
 class FSManager implements PreprocessingMangager {
@@ -110,10 +111,9 @@ class FSManager implements PreprocessingMangager {
 
 	}
 	
-	public static void main(String[] args) {
-		// DEBUG Walkthrough without listening
-		PreprocessingMangager testm = new FSManager(1);
-		testm.addTask(12); // 
-		
-	}
+//	public static void main(String[] args) {
+//		// DEBUG Walkthrough without listening
+//		PreprocessingMangager testm = new FSManager(1);
+//		testm.addTask(12); // 		
+//	}
 }

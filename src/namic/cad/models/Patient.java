@@ -1,4 +1,4 @@
-package models;
+package namic.cad.models;
 
 public class Patient {
 

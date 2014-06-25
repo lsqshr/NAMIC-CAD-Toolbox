@@ -1,4 +1,4 @@
-package preprocessor.interfaces;
+package namic.cad.preprocessor.interfaces;
 
 public interface PWorker {
 

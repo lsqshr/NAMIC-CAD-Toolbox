@@ -1,4 +1,4 @@
-package preprocessor.interfaces;
+package namic.cad.preprocessor.interfaces;
 public interface PreprocessingMangager{
    
     // Start the Preprocessing Manager to listen for the new tasks
