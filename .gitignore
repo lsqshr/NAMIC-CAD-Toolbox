@@ -1,5 +1,5 @@
-*.xml
-*.png
-*.jpg
-*.jpeg
-*.swp
+*png
+*jpg
+*jpeg
+*swp
+*class
