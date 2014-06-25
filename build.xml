@@ -16,7 +16,6 @@
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -49,7 +48,7 @@
         <antcall target="build"/>
     </target>
     <target name="FSManager">
-        <java classname="preprocessor.fs.FSManager" failonerror="true" fork="yes">
+        <java classname="namic.cad.preprocessor.fs.FSManager" failonerror="true" fork="yes">
             <classpath refid="NAMIC-CAD-Toolbox.classpath"/>
         </java>
     </target>
