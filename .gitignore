@@ -1,3 +1,8 @@
-*xml
 *png
+*jpg
+*jpeg
 *swp
+*class
+.idea/*
+*iml
+.metadata/*
